@@ -23,7 +23,11 @@ const NavBar = () => {
     let items = [
         {
             key : "github",
-            icon : <GithubFilled style={{fontSize: '30px'}} />
+            label: (
+                <a href="https://github.com/MikiyasMebrate" target="_blank">
+                  <GithubFilled style={{fontSize: '30px'}} />,
+                </a>
+              ),
         }
     ]
 
@@ -33,7 +37,7 @@ const NavBar = () => {
         <Header style={headerStyle}>
             <Flex justify="space-between" align="center" >
                 <img style={{maxWidth : "200px"}} src={logo} alt="logo" />
-                <Menu style={{border:0}} mode="horizontal" items={items}></Menu>
+                <Menu style={{border:0, width : 70}} mode="horizontal" items={items}></Menu>
             </Flex>
         </Header>
         </>
