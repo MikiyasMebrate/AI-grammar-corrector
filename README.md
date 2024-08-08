@@ -10,3 +10,5 @@ Currently, two official plugins are available:
 
 # Create .env file and add your GEMINI API key
 VITE_GEMINI_API_KEY = #2313#
+
+![plot](./sample.png)
